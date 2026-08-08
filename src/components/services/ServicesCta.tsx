@@ -12,7 +12,7 @@ export function ServicesCta() {
             Un projet technologique ? Nos experts africains vous accompagnent.
           </h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl mx-auto">
-            Ne laissez pas vos idées dormir. Discutons ensemble de la meilleure stratégie pour
+            Donnez vie à vos idées . Discutons ensemble de la meilleure stratégie pour
             digitaliser votre succès.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

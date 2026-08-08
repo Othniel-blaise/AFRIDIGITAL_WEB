@@ -42,9 +42,11 @@ export function Navbar() {
       </div>
 
       <div className="flex items-center gap-4">
-        <Button to="/contact" size="md" className="hidden sm:inline-flex">
-          Get Started
-        </Button>
+        <div className="hidden md:block">
+          <Button to="/contact" size="md">
+            Get Started
+          </Button>
+        </div>
         <button
           type="button"
           className="md:hidden text-primary"
@@ -70,9 +72,11 @@ export function Navbar() {
               {link.label}
             </RouterNavLink>
           ))}
-          <Button to="/contact" size="md" onClick={() => setMenuOpen(false)} className="sm:hidden w-full">
-            Get Started
-          </Button>
+          <div className="md:hidden">
+            <Button to="/contact" size="md" onClick={() => setMenuOpen(false)} className="w-full">
+              Get Started
+            </Button>
+          </div>
         </div>
       )}
     </nav>

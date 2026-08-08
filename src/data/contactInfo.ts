@@ -22,7 +22,7 @@ export const contactChannels: ContactChannel[] = [
     title: "Phone",
     rows: [
       { label: "Côte d'Ivoire:", value: "+225 07 79 28 48 84" },
-      { label: "Lagos Office:", value: "+225  07 89 88 60 13" },
+      { label: "Côte d'Ivoire:", value: "+225  07 89 88 60 13" },
     ],
   },
 ];
