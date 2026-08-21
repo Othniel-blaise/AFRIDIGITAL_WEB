@@ -6,6 +6,7 @@ const buttonContent = {
   idle: { label: "Envoyer le message", icon: "send", spin: false },
   sending: { label: "Envoi en cours...", icon: "sync", spin: true },
   sent: { label: "Message envoyé !", icon: "check_circle", spin: false },
+  error: { label: "Échec, réessayez", icon: "error", spin: false },
 } as const;
 
 export function ContactForm() {
@@ -34,9 +35,9 @@ export function ContactForm() {
         <div className="md:col-span-2 flex justify-end">
           <button
             type="submit"
-            disabled={status !== "idle"}
+            disabled={status === "sending"}
             className={`px-10 py-4 rounded-lg font-headline-md flex items-center gap-2 group transition-all shadow-lg shadow-primary/20 disabled:opacity-80 ${
-              status === "sent" ? "bg-green-600" : "bg-primary"
+              status === "sent" ? "bg-green-600" : status === "error" ? "bg-red-600" : "bg-primary"
             } text-on-primary hover:-translate-y-1`}
           >
             {label}

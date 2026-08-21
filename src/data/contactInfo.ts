@@ -7,13 +7,13 @@ export const contactChannels: ContactChannel[] = [
     rows: [
       {
         label: "General inquiries:",
-        value: "afridigital4@gmail.com",
-        href: "mailto:afridigital4@gmail.com",
+        value: "news@afridigital.fr",
+        href: "mailto:news@afridigital.fr",
       },
       {
         label: "Technical support:",
-        value: "afridigital4@gmail.com",
-        href: "mailto:afridigital4@gmail.com",
+        value: "news@afridigital.fr",
+        href: "mailto:news@afridigital.fr",
       },
     ],
   },

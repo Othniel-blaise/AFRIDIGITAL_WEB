@@ -39,4 +39,4 @@ export interface OfficeHub {
   address: string;
 }
 
-export type SubmitStatus = "idle" | "sending" | "sent";
+export type SubmitStatus = "idle" | "sending" | "sent" | "error";

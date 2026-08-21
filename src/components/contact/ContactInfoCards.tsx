@@ -15,7 +15,7 @@ export function ContactInfoCards() {
           </div>
           {channel.rows.map((row, index) => (
             <div
-              key={row.label}
+              key={`${row.label}-${index}`}
               className={index > 0 ? "mt-4 pt-4 border-t border-outline-variant/30" : ""}
             >
               <p className="text-on-surface-variant mb-2">{row.label}</p>
