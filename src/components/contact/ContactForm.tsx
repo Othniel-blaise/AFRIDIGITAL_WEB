@@ -1,4 +1,5 @@
 import { useContactForm } from "../../hooks/useContactForm";
+import { MAIL_TO } from "../../lib/mailConfig";
 import { FloatingLabelInput, FloatingLabelTextarea } from "../ui/FloatingLabelField";
 import { MaterialIcon } from "../ui/MaterialIcon";
 
@@ -16,6 +17,8 @@ export function ContactForm() {
   return (
     <div className="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/30">
       <form ref={formRef} className="grid grid-cols-1 md:grid-cols-2 gap-8" onSubmit={handleSubmit}>
+        {/* Destinataire du message : lu par le template EmailJS via {{to_email}}. */}
+        <input type="hidden" name="to_email" value={MAIL_TO} />
         <FloatingLabelInput id="name" name="name" type="text" label="Nom Complet" />
         <FloatingLabelInput id="email" name="email" type="email" label="Email Professionnel" />
         <FloatingLabelInput

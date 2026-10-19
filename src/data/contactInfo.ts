@@ -1,4 +1,5 @@
 import type { ContactChannel, OfficeHub } from "../types";
+import { CONTACT_EMAIL_GENERAL, CONTACT_EMAIL_SUPPORT } from "../lib/mailConfig";
 
 export const contactChannels: ContactChannel[] = [
   {
@@ -7,13 +8,13 @@ export const contactChannels: ContactChannel[] = [
     rows: [
       {
         label: "General inquiries:",
-        value: "news@afridigital.fr",
-        href: "mailto:news@afridigital.fr",
+        value: CONTACT_EMAIL_GENERAL,
+        href: `mailto:${CONTACT_EMAIL_GENERAL}`,
       },
       {
         label: "Technical support:",
-        value: "news@afridigital.fr",
-        href: "mailto:news@afridigital.fr",
+        value: CONTACT_EMAIL_SUPPORT,
+        href: `mailto:${CONTACT_EMAIL_SUPPORT}`,
       },
     ],
   },
